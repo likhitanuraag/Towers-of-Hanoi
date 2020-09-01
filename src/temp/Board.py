@@ -156,16 +156,4 @@ class Board:
             rodNum = bit1 + (bit2 * 2) + (bit3 * 4)
             new.rods[rodNum].append(i)
             
-        return new
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+        return new          
