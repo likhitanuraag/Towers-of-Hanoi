@@ -117,30 +117,18 @@ class Node:
          from IPython.display import clear_output # This is for Jupyter Notebooks
          
          # This function is just a utility to display the stacks in a easy to read way
-         max_height = self.ring_count
-         
-         for ring_height in range(max_height, 0, -1):
-             for stack_index in range(len(self.stacks)):
-                 if len(self.stacks[stack_index]) >= ring_height:
-                     print(self.stacks[stack_index][-ring_height], " ", end="")
-                 else:
-                     print(" ", end="")
-             print("")
-         time.sleep(delay_increment)   
-# =============================================================================
-#          print("---------------------------")
-#          print(self.stacks[stack_index])
-#          
-#          for stack_index in range(len(self.stacks)):
-#              if len(self.stacks[stack_index]) >= ring_height:
-#                  print(self.stacks[stack_index][-ring_height], " ", end="")
-#              else:
-#                  print(" ", end="")
-#          print("")
-#          
-#          print("---------------------------")
-# =============================================================================
-         
+         #max_height = self.ring_count
+        
+         #for ring_height in range(max_height, 0, -1):
+             #for stack_index in range(len(self.stacks)):
+                 #if len(self.stacks[stack_index]) >= ring_height:
+                     #print(self.stacks[stack_index][-ring_height], " ", end="")
+                 #else:
+                     #print("-", end="")
+             #print("")
+         #time.sleep(delay_increment)   
+         print(str(self.stacks)[1:-1])
+         time.sleep(delay_increment)  
          
          # Select one of these based on your environment
          # Leave these commented out if you want to view all node configurations
