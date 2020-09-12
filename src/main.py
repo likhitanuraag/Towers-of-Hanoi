@@ -114,7 +114,7 @@ class Node:
      def print_stacks(self, delay_increment=0.03):
          # These two imports are based on your environment
          from os import system # This is for terminal/command prompt
-         from IPython.display import clear_output # This is for Jupyter Notebooks
+         #from IPython.display import clear_output # This is for Jupyter Notebooks
          
          # This function is just a utility to display the stacks in a easy to read way
          #max_height = self.ring_count
@@ -132,7 +132,7 @@ class Node:
          
          # Select one of these based on your environment
          # Leave these commented out if you want to view all node configurations
-         system('clear') # This will clear a terminal/command prompt output
+         #system('clear') # This will clear a terminal/command prompt output
          # clear_output(wait=True) # This will clear a Jupyter Notebooks output
  
  
